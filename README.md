@@ -16,7 +16,7 @@ Say goodbye to badly named menus in Wordpress and say hello to Wordpress BEM Men
 
 Please note that these modifier classes are not inherited by descendants. *TODO:* Let's figure out a better way to do this, shall we?
 
-## html output
+## HTML Output
 ```html
 <ul class="my-menu my-menu--mod">
 	<li class="my-menu__item  my-menu__item--active  my-menu__item--id-78"><a class="my-menu__link" href="#">Home</a></li>
@@ -25,7 +25,7 @@ Please note that these modifier classes are not inherited by descendants. *TODO:
 </ul>
 ```
 
-## CSS classes
+## CSS Classes
 
 The syntax is very simple, all menu items are logically grouped by depth to avoid some of the nesting issues of the standard output.
 
@@ -80,6 +80,6 @@ $this->item_css_classes = array(
 
 ```
 
-## Custom CSS classes set in `wp-admin` > Menus
+## Custom CSS Classes for Menu Items
 
 If you add a custom class to a menu item in `wp-admin`, Wordpress-Bem-Menu now adds the class to the item converted to a BEM modifier. For example, if you add a class of `my-class` to a menu item, the output would be `<li class="main-menu main-menu__item main-menu__item--my-class"></li>`.
